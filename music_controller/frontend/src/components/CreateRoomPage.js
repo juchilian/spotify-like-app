@@ -90,7 +90,7 @@ export default class CreateRoomPage extends Component {
 								defaultValue={this.defaultVotes}
 								inputProps={{
 									min: 1,
-									sytle: { textAlign: "center" },
+									style: { textAlign: "center" },
 								}}
 							/>
 							<FormHelperText>
