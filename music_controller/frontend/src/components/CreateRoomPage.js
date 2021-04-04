@@ -46,7 +46,7 @@ export default class CreateRoomPage extends Component {
 		}
 		fetch('/api/create-room', requestOptions)
 			.then((response) => response.json())
-			.then((data) => console.log(data))
+			.then((data) => this.props.history.push('/room/' + data.code)) // redirect to room page
 	}
 
 	render() {
@@ -99,10 +99,10 @@ export default class CreateRoomPage extends Component {
 						</FormControl>
 					</Grid>
 				</Grid>
-				<Grid item xs={6} align="center">
+				<Grid item xs={12} align="center">
 					<Button color="primary" variant="contained" onClick={this.handleRoomButtonPressed}>Create A Room</Button>
 				</Grid>
-				<Grid item xs={6} align="center">
+				<Grid item xs={12} align="center">
 					<Button color="secondary" variant="contained" to="/" component={Link}>Back</Button>
 				</Grid>
 			</Grid>
