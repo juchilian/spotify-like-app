@@ -12,7 +12,7 @@ import {
   Typography,
   Button,
 } from "@material-ui/core";
-import { Alert } from "@material-ui/lab/Alert"
+import { Alert } from "@material-ui/lab"
 
 export default class CreateRoomPage extends Component {
   static defaultProps = {
