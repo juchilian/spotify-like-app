@@ -18,7 +18,7 @@ export default class MusicPlayer extends Component {
   pauseSong() {
     const requestOptions = {
       method: "PUT",
-      headeres: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
     };
     fetch("/spotify/pause", requestOptions);
   }
@@ -26,7 +26,7 @@ export default class MusicPlayer extends Component {
   playSong() {
     const requestOptions = {
       method: "PUT",
-      headeres: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json" },
     };
     fetch("/spotify/play", requestOptions);
   }
