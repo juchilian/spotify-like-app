@@ -10,6 +10,7 @@ import {
   Redirect,
   Switch,
 } from "react-router-dom";
+import Info from "./info"
 
 export default class HomePage extends Component {
   constructor(props) {
@@ -41,6 +42,9 @@ export default class HomePage extends Component {
               <Button color="primary" to="/join" component={Link}>
                 Join a Room
               </Button>
+              <Button color="default" to="/info" component={Link}>
+                Info
+              </Button>
               <Button color="secondary" to="/create" component={Link}>
                 Create a Room
               </Button>
@@ -65,6 +69,7 @@ export default class HomePage extends Component {
           }}>
           </Route>
           <Route path="/join" component={RoomJoinPage} />
+          <Route path="/info" component={Info} />
           <Route path="/create" component={CreateRoomPage} />
           <Route path="/room/:roomCode"
             render={(props) => {
